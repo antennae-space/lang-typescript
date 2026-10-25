@@ -1,8 +1,8 @@
 {
-  "$schema": "https://raw.githubusercontent.com/antennae-space/plugin-sdk/v1.6.0/plugin.schema.json",
+  "$schema": "https://raw.githubusercontent.com/antennae-space/plugin-sdk/v1.8.0/plugin.schema.json",
   "id": "lang-typescript",
   "name": "JavaScript and TypeScript",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "apiVersion": 1,
   "ide": ">=1.24.0 <2",
   "assets": "https://github.com/antennae-space/lang-typescript/releases/download/v{version}/lang-typescript-{arch}.tar.gz",
@@ -52,7 +52,14 @@
             ],
             "pathDirs": [
               "NODE/bin"
-            ]
+            ],
+            "install": {
+              "manager": "npm",
+              "packages": [
+                "typescript-language-server",
+                "typescript@5"
+              ]
+            }
           }
         ],
         "tests": {
@@ -99,7 +106,14 @@
             ],
             "pathDirs": [
               "NODE/bin"
-            ]
+            ],
+            "install": {
+              "manager": "npm",
+              "packages": [
+                "typescript-language-server",
+                "typescript@5"
+              ]
+            }
           }
         ],
         "tests": {

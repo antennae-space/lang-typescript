@@ -4,6 +4,7 @@ The JavaScript and TypeScript language pack of [Web IDE](https://github.com/ante
 
 ## What it needs
 
+- **Install from the IDE**: a JavaScript or TypeScript file without the server shows a banner, *Install typescript-language-server* (also in *Settings → Plugins*): the IDE runs npm in a console (the server and TypeScript 5), into its own folder (`~/.local/share/web-ide/tools/lang-typescript`). You need node and npm.
 - **typescript-language-server** and **typescript** 5 or 6 (`npm install -g typescript-language-server typescript@5`; TypeScript 7, the native one, has no `tsserver` yet), on your PATH. A project's own `typescript` (its `node_modules`) wins.
 - The IDE runs it **confined**: it reads your project (not write), the node on your PATH (`NODE`) and your global `node_modules` (`NODE_MODULES`: the server and its `typescript`), keeps its caches in its own folder, and has no network.
 - JavaScript and TypeScript are two languages of the pack: in a project with both, a server runs for each.
